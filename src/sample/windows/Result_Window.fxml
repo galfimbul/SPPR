@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ResultWindowController">
+   <children>
+      <ListView fx:id="result_Window_List" layoutX="50.0" layoutY="112.0" prefHeight="235.0" prefWidth="284.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="360.0" AnchorPane.topAnchor="110.0" />
+      <Label fx:id="input_Krit_Amount_Label" alignment="CENTER" layoutX="14.0" layoutY="41.0" text="Система поддержки принятия решений при проектировании ЛВC" textAlignment="JUSTIFY" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="Times New Roman" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="matrix_Window_Label" alignment="CENTER" layoutX="109.0" layoutY="75.0" text="Результаты расчета" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="378.0" layoutY="75.0" prefHeight="278.0" prefWidth="257.0" text="В данном окне представлены результаты работы программы. В списке находятся выбранные альтернативы, упорядоченные в порядке предпочтительности от самой предпочтительной до самой невыгодной. Рядом с названием альтернативы указано значение глобального приоритета. Необходимо выбрать альтернативу с максимальным значением данного параметра. Так же Вы можите начать новый расчет или жакрыть программу с помощью кнопок ниже." textFill="#545454" wrapText="true" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="result_Window_newBtn" layoutX="378.0" layoutY="344.0" mnemonicParsing="false" text="Новый расчет" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="195.0">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="result_Window_CLoseBtn" layoutX="533.0" layoutY="344.0" mnemonicParsing="false" text="Закрыть программу" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="5.0">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <MenuBar fx:id="input_Krit_Amount_MenuBarl" layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Файл">
+               <items>
+                  <MenuItem fx:id="new_Calculation_Menu" mnemonicParsing="false" text="Новый расчет">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem fx:id="load_Menu" mnemonicParsing="false" text="Загрузить" />
+                  <MenuItem fx:id="save_Menu" mnemonicParsing="false" text="Сохранить">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem fx:id="close_Menu" mnemonicParsing="false" text="Закрыть">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Помощь">
+               <items>
+                  <MenuItem fx:id="about_Menu" mnemonicParsing="false" text="О программе" />
+                  <MenuItem fx:id="connection_Menu" mnemonicParsing="false" text="Связь с автором" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

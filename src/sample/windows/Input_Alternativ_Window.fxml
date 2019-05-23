@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox minHeight="480.0" minWidth="640.0" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.InputAlternativController">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                    <children>
+                  <MenuBar fx:id="input_Krit_Amount_MenuBarl" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <menus>
+                        <Menu mnemonicParsing="false" text="Файл">
+                           <items>
+                              <MenuItem fx:id="new_Calculation_Menu" mnemonicParsing="false" text="Новый расчет">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                              <MenuItem fx:id="load_Menu" mnemonicParsing="false" text="Загрузить" />
+                              <MenuItem fx:id="save_Menu" mnemonicParsing="false" text="Сохранить">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                              <MenuItem fx:id="close_Menu" mnemonicParsing="false" text="Закрыть">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Помощь">
+                           <items>
+                              <MenuItem fx:id="about_Menu" mnemonicParsing="false" text="О программе" />
+                              <MenuItem fx:id="connection_Menu" mnemonicParsing="false" text="Связь с автором" />
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+                        <Label fx:id="input_Alternativ_Label" alignment="CENTER" layoutX="20.0" layoutY="54.0" text="Система поддержки принятия решений при проектировании ЛВC" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="54.0">
+                            <font>
+                                <Font name="Times New Roman" size="23.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+        <HBox prefHeight="343.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+            <children>
+                <VBox prefHeight="340.0" prefWidth="444.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <AnchorPane prefHeight="340.0" prefWidth="501.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Label fx:id="input_Alternativ_InsertLabel" alignment="CENTER" layoutY="14.0" prefHeight="55.0" prefWidth="355.0" text="Введите рассматриваемые альтернативы" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                    <font>
+                                        <Font name="Times New Roman" size="20.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="input_Alternativ_InsertField" layoutX="30.0" layoutY="78.0" prefHeight="37.0" prefWidth="185.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="201.0">
+                                    <font>
+                                        <Font name="Times New Roman" size="20.0" />
+                                    </font>
+                                </TextField>
+                        <ListView fx:id="input_Alternativ_AlternativList" layoutX="151.0" layoutY="150.0" prefHeight="183.0" prefWidth="239.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="151.0" AnchorPane.topAnchor="150.0" />
+                        <Label fx:id="input_Alternativ_PrevAlternativLabel" layoutX="26.0" layoutY="143.0" prefHeight="139.0" prefWidth="163.0" text="Введенные альтернативы" textAlignment="JUSTIFY" wrapText="true" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="170.0">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="input_Alternativ_InsertBut" layoutX="310.0" layoutY="78.0" mnemonicParsing="false" text="Добавить" AnchorPane.rightAnchor="80.0">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="insert_Alternativ_Delete_Btn" layoutX="397.0" layoutY="289.0" mnemonicParsing="false" text="Удалить">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+                <VBox prefHeight="340.0" prefWidth="245.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <AnchorPane prefHeight="343.0" prefWidth="238.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Label fx:id="input_Alternativ_HelpLabel" alignment="TOP_CENTER" layoutX="1.0" layoutY="20.0" prefHeight="307.0" prefWidth="239.0" text="В данном окне Вам необходимо ввести названия рассматриваемых альтернатив. Так же Вы сможете увидеть список уже введенных Вами альтернатив. Как только Вы добавите заданное ранее количество альтернатив, Вы сможете продолжить работу с программой." textFill="#545454" wrapText="true" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                                    <font>
+                                        <Font name="Times New Roman" size="20.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox prefHeight="56.0" prefWidth="700.0">
+            <children>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Button fx:id="input_Alternativ_PrevBut" layoutX="549.0" layoutY="16.0" mnemonicParsing="false" text="Назад" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="100.0">
+                            <font>
+                                <Font name="Times New Roman" size="20.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="input_Alternativ_NextBut" layoutX="622.0" layoutY="16.0" mnemonicParsing="false" text="Далее" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                            <font>
+                                <Font name="Times New Roman" size="20.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+    </children>
+</VBox>

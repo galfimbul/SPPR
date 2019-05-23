@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MatrixWindowController">
+   <children>
+      <HBox prefHeight="90.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="86.0" prefWidth="700.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="input_Krit_Amount_Label" alignment="CENTER" layoutX="247.0" layoutY="42.0" text="Система поддержки принятия решений при проектировании ЛВC" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="40.0">
+                     <font>
+                        <Font name="Times New Roman" size="23.0" />
+                     </font>
+                  </Label>
+                  <MenuBar fx:id="input_Krit_Amount_MenuBarl" layoutX="91.0" layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <menus>
+                        <Menu mnemonicParsing="false" text="Файл">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Close" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Помощь">
+                           <items>
+                              <MenuItem fx:id="about_Menu" mnemonicParsing="false" text="О программе" />
+                              <MenuItem fx:id="connection_Menu" mnemonicParsing="false" text="Связаться с автором" />
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox prefHeight="397.0" prefWidth="1103.0" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="391.0" prefWidth="632.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="matrix_Window_Label" alignment="CENTER" layoutX="149.0" text="Матрица попарного сравнения критериев" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Label>
+                  <GridPane fx:id="matrix_Window_MatrixPane" alignment="CENTER" gridLinesVisible="true" layoutX="20.0" layoutY="30.0" prefHeight="344.0" prefWidth="690.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="30.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                  </GridPane>
+                  <Label alignment="TOP_LEFT" layoutX="833.0" layoutY="15.0" prefHeight="300.0" prefWidth="257.0" text="Вам необходимо заполнить матрицу сравнения критериев по следующему принципу: Например, если К1 превосходит К4, то на пересечении первой строки и четвертого столбца ставится целое число, а в четвертая строка первый столбец – обратная величина, равная 1/число. Если же наоборот, то данные числа меняются местами. Если считается, что критерии одинаковы, то в обе клетки ставится единица." textFill="#545454" wrapText="true" AnchorPane.bottomAnchor="85.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="15.0">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="insert_Data_Btn" layoutX="738.0" layoutY="315.0" mnemonicParsing="false" text="Заполнить данными" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="120.0">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="clear_Matrix_Btn" layoutX="738.0" layoutY="355.0" mnemonicParsing="false" text="Очистить данные" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="120.0">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox maxHeight="-Infinity" prefHeight="34.0" prefWidth="1000.0" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="58.0" prefWidth="1000.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="matrix_Window_NextBut" layoutX="534.0" layoutY="28.0" mnemonicParsing="false" text="Далее" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="matrix_Window_PrevBut" layoutX="452.0" layoutY="28.0" mnemonicParsing="false" text="Назад" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="matrix_Window_Lmax_Label" layoutX="26.0" layoutY="20.0" prefHeight="23.0" prefWidth="118.0" text="Lmax = 0">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="matrix_Window_IS_Label" layoutX="176.0" layoutY="20.0" prefHeight="23.0" prefWidth="109.0" text="ИС = 0">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="matrix_Window_Os_Label" layoutX="332.0" layoutY="17.0" prefHeight="23.0" prefWidth="118.0" text="ОС = 0%">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SPPR_2_0.jnlp">
+  <information>
+    <title>SPPR_2.0</title>
+    <vendor>Unknown</vendor>
+    <description>SPPR_2.0</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SPPR_2_0.jar" size="119148" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="sample.Main"  name="SPPR_2.0" />
+  <update check="background"/>
+</jnlp>
