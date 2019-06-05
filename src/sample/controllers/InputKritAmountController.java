@@ -35,12 +35,6 @@ public class InputKritAmountController {
     }
 
     @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
-
-    @FXML
     private Button input_Krit_Amount_NextBut;
 
     @FXML
@@ -57,12 +51,6 @@ public class InputKritAmountController {
 
     @FXML
     private TextField input_Krit_Amount_InputAlternativField;
-
-    @FXML
-    private Button input_Krit_Amount_PrevBut;
-
-    @FXML
-    private Label main_Window_Label;
 
     @FXML
     private MenuItem new_Calculation_Menu;
@@ -99,7 +87,8 @@ public class InputKritAmountController {
             String warning_Message_Alternativ_Amount = "Введите корректное значение поля "
                     + input_Krit_Amount_InputAlternativLabel.getText();
             krit_Amount = warningCheck(krit_Amount, warning_Message_Krit_Amount, input_Krit_Amount_InputKritField);
-            alternative_Amount = warningCheck(alternative_Amount, warning_Message_Alternativ_Amount, input_Krit_Amount_InputAlternativField);
+            alternative_Amount = warningCheck(alternative_Amount, warning_Message_Alternativ_Amount,
+                    input_Krit_Amount_InputAlternativField);
             System.out.println("Критериев: " + krit_Amount);
             System.out.println("Альтернатив: " + alternative_Amount);
             //input_Krit_Amount_NextBut.getScene().getWindow().hide();
@@ -108,7 +97,6 @@ public class InputKritAmountController {
             } else {
                 HelloWindowController.set_And_Show_Window("/sample/windows/Select_Krit_Window.fxml");
             }
-
         });
         save_Menu.setOnAction(event -> {HelloWindowController.saveProgram();});
         load_Menu.setOnAction(event -> {HelloWindowController.loadProgram();
@@ -119,18 +107,17 @@ public class InputKritAmountController {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
         });
         close_Menu.setOnAction(event -> System.exit(0));
         new_Calculation_Menu.setOnAction(event -> ResultWindowController.createNewSession());
         about_Menu.setOnAction(event -> {
-            HelloWindowController.createInformationWindow("Система поддержки принятия решений создана в рамках МКР в 2019 году","О программе");
+            HelloWindowController.createInformationWindow("Система поддержки принятия решений создана в рамках МКР в " +
+                    "2019 году","О программе");
         });
         connection_Menu.setOnAction(event -> {
-            HelloWindowController.createInformationWindow("По всем возникшим вопросам обращаться: aevshvetsov@gmail.com","Связь с автором");
+            HelloWindowController.createInformationWindow("По всем возникшим вопросам обращаться: aevshvetsov@gmail.com",
+                    "Связь с автором");
         });
-
-
     }
 
     private void createAlertWindow(String message) {
@@ -188,10 +175,8 @@ public class InputKritAmountController {
 
         }
         return n;
-
 // The Java 8 way to get the response value (with lambda expression).
         //result.ifPresent(name -> System.out.println("Your name: " + name));
     }
-
 }
 

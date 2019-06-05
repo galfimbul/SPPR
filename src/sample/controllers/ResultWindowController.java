@@ -77,7 +77,8 @@ public class ResultWindowController {
                 nvpAlterValue = MatrixWindowController.getResultMassiv()[i][j];
                 value = value + (nvpKritValue * nvpAlterValue);
                 //result_Window_List.getItems().add(MatrixWindowController.getResultMassiv()[i][j]);
-                System.out.printf("%2.3f * %2.3f = %f, value = %2.3f \t", nvpKritValue, nvpAlterValue, nvpKritValue * nvpAlterValue, value);
+                System.out.printf("%2.3f * %2.3f = %f, value = %2.3f \t", nvpKritValue, nvpAlterValue, nvpKritValue *
+                        nvpAlterValue, value);
             }
             finalyResult[i - 1] = value;
             value = 0;
@@ -96,14 +97,10 @@ public class ResultWindowController {
             listView[i][0] = InputAlternativController.getInputAlternativList().get(i);
             listView[i][1] = String.format(Locale.ENGLISH,"%2.3f", finalyResult[i]);
         }
-
-
-
         for (final String[] s : listView) {
             System.out.println(s[0] + " + " + s[1]);
         }
         System.out.println("Длина массива: " + listView[0].length);
-
         // сортировка матрицы результатов
         boolean isSorted = false;
         String[] buf;
@@ -123,9 +120,6 @@ public class ResultWindowController {
         for (final String[] s : listView) {
             System.out.println(s[0] + " + " + s[1]);
         }
-
-
-
         for (int i = 0; i < finalyResult.length; i++) {
             result_Window_List.getItems().add(listView[i][0] + " : " + listView[i][1]);
         }
@@ -135,9 +129,6 @@ public class ResultWindowController {
 
             createNewSession();
             HelloWindowController.set_And_Show_Window("/sample/windows/Hello_Window.fxml");
-
-
-
         });
         save_Menu.setOnAction(event -> {
             HelloWindowController.saveProgram();
@@ -153,12 +144,12 @@ public class ResultWindowController {
             }
 
         });
-
         about_Menu.setOnAction(event -> {
             HelloWindowController.createInformationWindow("Система поддержки принятия решений создана в рамках МКР в 2019 году","О программе");
         });
         connection_Menu.setOnAction(event -> {
-            HelloWindowController.createInformationWindow("По всем возникшим вопросам обращаться: aevshvetsov@gmail.com","Связь с автором");
+            HelloWindowController.createInformationWindow("По всем возникшим вопросам обращаться: aevshvetsov@gmail.com",
+                    "Связь с автором");
         });
         close_Menu.setOnAction(event -> System.exit(0));
         result_Window_CLoseBtn.setOnAction(event -> System.exit(0));
@@ -166,16 +157,12 @@ public class ResultWindowController {
             wc.set_And_Show_Window("/sample/windows/input_Krit_Amount_Window.fxml");
             createNewSession();
         });
-
     }
-
     public static void createNewSession() {
         InputKritAmountController.setKrit_Amount(0);
         InputKritAmountController.setAlternative_Amount(0);
         SelectKritController.getSelectedKritMass().clear();
         InputAlternativController.getInputAlternativList().clear();
-
-
+        MatrixWindowController.getSaveMatrixValue().clear();
     }
 }
-

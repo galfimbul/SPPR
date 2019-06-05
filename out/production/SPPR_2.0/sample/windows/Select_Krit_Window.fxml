@@ -14,13 +14,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SelectKritController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="400.0" prefWidth="600.0"
+      xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.controllers.SelectKritController">
    <children>
       <HBox prefHeight="120.0" prefWidth="800.0">
          <children>
             <AnchorPane prefHeight="128.0" prefWidth="800.0" HBox.hgrow="ALWAYS">
                <children>
-                  <MenuBar fx:id="input_Krit_Amount_MenuBarl" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <MenuBar fx:id="input_Krit_Amount_MenuBarl" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
                      <menus>
                         <Menu mnemonicParsing="false" text="Файл">
                            <items>
@@ -50,7 +53,9 @@
                         </Menu>
                      </menus>
                   </MenuBar>
-                  <Label fx:id="input_Krit_Amount_Label" alignment="CENTER" layoutX="77.0" layoutY="41.0" text="Система поддержки принятия решений при проектировании ЛВC" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="38.0">
+                  <Label fx:id="input_Krit_Amount_Label" alignment="CENTER" layoutX="77.0" layoutY="41.0"
+                         text="Система поддержки принятия решений при проектировании ЛВC" textAlignment="JUSTIFY"
+                         AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="38.0">
                      <font>
                         <Font name="Times New Roman" size="23.0" />
                      </font>
@@ -63,12 +68,17 @@
          <children>
             <AnchorPane prefHeight="35.0" prefWidth="800.0" HBox.hgrow="ALWAYS">
                <children>
-                  <Label fx:id="select_Krit_Window_InsertLabel" alignment="CENTER" layoutX="21.0" layoutY="12.0" prefHeight="23.0" prefWidth="184.0" text="Добавить критерий" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="599.0" AnchorPane.topAnchor="15.0">
+                  <Label fx:id="select_Krit_Window_InsertLabel" alignment="CENTER" layoutX="21.0" layoutY="12.0"
+                         prefHeight="23.0" prefWidth="184.0" text="Добавить критерий" textAlignment="JUSTIFY"
+                         AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="599.0"
+                         AnchorPane.topAnchor="15.0">
                      <font>
                         <Font name="Times New Roman" size="20.0" />
                      </font>
                   </Label>
-                  <Button fx:id="select_Krit_Window_InsertBut" alignment="CENTER" layoutX="211.0" layoutY="9.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="110.0" text="Добавить" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="480.0" AnchorPane.topAnchor="5.0">
+                  <Button fx:id="select_Krit_Window_InsertBut" alignment="CENTER" layoutX="211.0" layoutY="9.0"
+                          mnemonicParsing="false" prefHeight="23.0" prefWidth="110.0" text="Добавить"
+                          AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="480.0" AnchorPane.topAnchor="5.0">
                      <font>
                         <Font name="Times New Roman" size="20.0" />
                      </font>
@@ -81,17 +91,24 @@
          <children>
             <AnchorPane prefHeight="323.0" prefWidth="418.0" HBox.hgrow="ALWAYS">
                <children>
-                  <Label fx:id="select_Krit_Window_SelectKritLabel" alignment="CENTER" layoutX="21.0" layoutY="22.0" text="Выберите критерий из списка" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+                  <Label fx:id="select_Krit_Window_SelectKritLabel" alignment="CENTER" layoutX="21.0"
+                         layoutY="22.0" text="Выберите критерий из списка" AnchorPane.leftAnchor="40.0"
+                         AnchorPane.rightAnchor="40.0">
                      <font>
                         <Font name="Times New Roman" size="20.0" />
                      </font>
                   </Label>
-                  <ComboBox fx:id="select_Krit_Window_ComboBox" layoutX="31.0" layoutY="58.0" prefHeight="25.0" prefWidth="298.0" visibleRowCount="6" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="90.0" />
+                  <ComboBox fx:id="select_Krit_Window_ComboBox" layoutX="31.0" layoutY="58.0" prefHeight="25.0"
+                            prefWidth="298.0" visibleRowCount="6" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="90.0" />
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="323.0" prefWidth="373.0">
                <children>
-                  <Label fx:id="select_Krit_Window_HelpLabel" alignment="TOP_LEFT" layoutX="3.0" prefHeight="280.0" prefWidth="327.0" text="В данном окне Вам необходимо выбрать те критерии, на основании которых будет производиться сравнение. В случае отсутствия необходимых критериев, Вы можете воспользоваться кнопкой добавить критерий. После чего сможете выбрать необходимый Вам критерий из списка. В случае необходимости Вы сможете удалить выбранные критерии. Для этого выберите критерий из списка и нажмите кнопку удалить." textFill="#545454" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
+                  <Label fx:id="select_Krit_Window_HelpLabel" alignment="TOP_LEFT" layoutX="3.0"
+                         prefHeight="280.0" prefWidth="327.0" text="В данном окне Вам необходимо выбрать те критерии, на основании которых будет производиться сравнение. В случае отсутствия необходимых критериев, Вы можете воспользоваться кнопкой добавить критерий. После чего сможете выбрать необходимый Вам критерий из списка. В случае необходимости Вы сможете удалить выбранные критерии. Для этого выберите критерий из списка и нажмите кнопку удалить."
+                         textFill="#545454" wrapText="true"
+                         AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="2.0"
+                         AnchorPane.topAnchor="0.0">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
@@ -104,17 +121,21 @@
          <children>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
                <children>
-                  <ListView fx:id="select_Krit_Window_SelectedKritList" layoutX="209.0" prefHeight="78.0" prefWidth="289.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="209.0" AnchorPane.rightAnchor="302.0" AnchorPane.topAnchor="0.0">
+                  <ListView fx:id="select_Krit_Window_SelectedKritList" layoutX="209.0" prefHeight="78.0" prefWidth="289.0"
+                            AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="209.0" AnchorPane.rightAnchor="302.0"
+                            AnchorPane.topAnchor="0.0">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
                   </ListView>
-                  <Label fx:id="select_Krit_Window_SelectedKritLabel" alignment="CENTER" layoutX="11.0" layoutY="14.0" text="Выбранные критерии">
+                  <Label fx:id="select_Krit_Window_SelectedKritLabel" alignment="CENTER" layoutX="11.0" layoutY="14.0"
+                         text="Выбранные критерии">
                      <font>
                         <Font name="Times New Roman" size="20.0" />
                      </font>
                   </Label>
-                  <Button fx:id="select_Krit_Window_ListItemDeleteBut" layoutX="518.0" layoutY="31.0" mnemonicParsing="false" text="Удалить" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="180.0">
+                  <Button fx:id="select_Krit_Window_ListItemDeleteBut" layoutX="518.0" layoutY="31.0"
+                          mnemonicParsing="false" text="Удалить" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="180.0">
                      <font>
                         <Font name="Times New Roman" size="20.0" />
                      </font>
@@ -127,11 +148,15 @@
          <children>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
                <children>
-                  <Button fx:id="select_Krit_Window_PrevBut" layoutX="619.0" layoutY="18.0" mnemonicParsing="false" text="Назад" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="100.0">
+                  <Button fx:id="select_Krit_Window_PrevBut" layoutX="619.0" layoutY="18.0"
+                          mnemonicParsing="false" text="Назад" AnchorPane.bottomAnchor="10.0"
+                          AnchorPane.rightAnchor="100.0">
                      <font>
                         <Font name="Times New Roman" size="20.0" />
                      </font></Button>
-                  <Button fx:id="select_Krit_Window_NextBut" layoutX="719.0" layoutY="18.0" mnemonicParsing="false" text="Далее" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                  <Button fx:id="select_Krit_Window_NextBut" layoutX="719.0" layoutY="18.0"
+                          mnemonicParsing="false" text="Далее" AnchorPane.bottomAnchor="10.0"
+                          AnchorPane.rightAnchor="10.0">
                      <font>
                         <Font name="Times New Roman" size="20.0" />
                      </font></Button>

@@ -95,7 +95,6 @@ public class HelloWindowController {
         });
 
     }
-
     public static void createInformationWindow(String s, String title){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);
@@ -103,7 +102,6 @@ public class HelloWindowController {
         alert.setContentText(s);
         alert.showAndWait();
     }
-
     private static String createSaveFileWindow() {
         SimpleDateFormat df = new SimpleDateFormat("dd.MM.yyy_HH.mm");
         String date = df.format(new Date());
@@ -155,8 +153,6 @@ public class HelloWindowController {
         System.out.println("Файл не выбран");
         if(!fileName.isEmpty()) {
             try {
-                //InputStream is = HelloWindowController.class.getResourceAsStream(path);
-                //BufferedReader br = new BufferedReader(new InputStreamReader(is,"Utf8"));
                 BufferedReader br = new BufferedReader(new FileReader(fileName));
                 InputKritAmountController.setKrit_Amount(Integer.parseInt(br.readLine()));
                 InputKritAmountController.setAlternative_Amount(Integer.parseInt(br.readLine()));
@@ -181,10 +177,6 @@ public class HelloWindowController {
                 }
                 System.out.println();
                 size = Integer.parseInt(br.readLine());
-                /*for (int i = 0; i < size; i++) {
-                    //ResultWindowController.getListView()[i][0] = br.readLine();
-                    //ResultWindowController.getListView()[i][1] = br.readLine();
-                }*/
                 br.close();
                 System.out.println(InputKritAmountController.getKrit_Amount());
                 System.out.println(InputKritAmountController.getAlternative_Amount());
@@ -245,8 +237,6 @@ public class HelloWindowController {
         }
     }
 
-
-
         public static void set_And_Show_Window (String path){
             Parent parent = null;
 
@@ -261,6 +251,5 @@ public class HelloWindowController {
             Main.stage.show();
             //Main.stage.setResizable(true);
         }
-
     }
 

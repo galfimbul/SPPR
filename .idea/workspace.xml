@@ -18,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/SPPR_2_0$Main.coverage" NAME="Main Coverage Results" MODIFIED="1557777349011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/SPPR_2_0$Main.coverage" NAME="Main Coverage Results" MODIFIED="1558894870572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sample.controllers.*</FILTER>
     </SUITE>
   </component>
@@ -68,81 +68,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="InputKritAmountController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/controllers/InputKritAmountController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1018">
-              <caret line="92" column="10" lean-forward="false" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#776#777#0" expanded="true" />
-                <element signature="e#810#811#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
-                <element signature="e#900#901#0" expanded="true" />
-                <element signature="method#createAlertWindow#0;class#InputKritAmountController#0" expanded="false" />
-                <element signature="method#warningCheck#0;class#InputKritAmountController#0" expanded="false" />
-                <element signature="method#createWarningWindow#0;class#InputKritAmountController#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectKritController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/controllers/SelectKritController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="118" column="10" lean-forward="false" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputAlternativController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/controllers/InputAlternativController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="130" column="75" lean-forward="true" selection-start-line="130" selection-start-column="75" selection-end-line="130" selection-end-column="75" />
-              <folding>
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#845#846#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloWindowController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/controllers/HelloWindowController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="67" column="79" lean-forward="true" selection-start-line="67" selection-start-column="79" selection-end-line="67" selection-end-column="79" />
-              <folding>
-                <element signature="e#1741#1788#0" expanded="false" />
-                <element signature="method#createSaveFileWindow#0;class#HelloWindowController#0" expanded="false" />
-                <element signature="method#createLoadFileWindow#0;class#HelloWindowController#0" expanded="false" />
-                <element signature="method#loadProgram#0;class#HelloWindowController#0" expanded="false" />
-                <element signature="e#4773#4846#0" expanded="false" />
-                <element signature="method#saveProgram#0;class#HelloWindowController#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlternativWindowController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AlternativWindowController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/controllers/AlternativWindowController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="114" column="51" lean-forward="false" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
+            <state relative-caret-position="265">
+              <caret line="94" column="28" lean-forward="false" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
               <folding>
-                <element signature="e#5223#5413#0" expanded="false" />
-                <element signature="e#5733#6110#0" expanded="false" />
+                <element signature="e#3579#3769#0" expanded="false" />
+                <element signature="e#3928#3975#0" expanded="false" />
+                <element signature="e#4089#4466#0" expanded="false" />
+                <element signature="e#4557#4746#0" expanded="false" />
+                <element signature="e#4785#4967#0" expanded="false" />
                 <element signature="method#clearMatrix#0;class#AlternativWindowController#0" expanded="false" />
+                <element signature="method#isFlag#0;class#AlternativWindowController#0" expanded="false" />
                 <element signature="method#createTextField#0;class#AlternativWindowController#0" expanded="false" />
                 <element signature="method#columnConstraintsCreation#0;class#AlternativWindowController#0" expanded="false" />
                 <element signature="method#rowConstrCreation#0;class#AlternativWindowController#0" expanded="false" />
                 <element signature="method#createMatrix#0;class#AlternativWindowController#0" expanded="false" />
-                <element signature="method#setLoadedData#0;class#AlternativWindowController#0" expanded="false" />
                 <element signature="method#setTestData#0;class#AlternativWindowController#0" expanded="false" />
                 <element signature="method#getRandom#0;class#AlternativWindowController#0" expanded="false" />
                 <element signature="method#matrixColculation#0;class#AlternativWindowController#0" expanded="false" />
@@ -151,14 +93,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResultWindowController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/controllers/ResultWindowController.java">
+      <file leaf-file-name="HelloWindowController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/controllers/HelloWindowController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="147" column="89" lean-forward="false" selection-start-line="147" selection-start-column="89" selection-end-line="147" selection-end-column="89" />
+            <state relative-caret-position="4475">
+              <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#saveProgram#0;class#HelloWindowController#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InputAlternativController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/controllers/InputAlternativController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3275">
+              <caret line="147" column="13" lean-forward="false" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,9 +118,14 @@
       <file leaf-file-name="MatrixWindowController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/controllers/MatrixWindowController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="125" column="79" lean-forward="true" selection-start-line="125" selection-start-column="79" selection-end-line="125" selection-end-column="79" />
+            <state relative-caret-position="720">
+              <caret line="137" column="25" lean-forward="false" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
               <folding>
+                <element signature="e#4718#4908#0" expanded="false" />
+                <element signature="e#5081#5128#0" expanded="false" />
+                <element signature="e#5162#5327#0" expanded="false" />
+                <element signature="e#5366#5548#0" expanded="false" />
+                <element signature="method#isFlag#0;class#MatrixWindowController#0" expanded="false" />
                 <element signature="method#createTextField#0;class#MatrixWindowController#0" expanded="false" />
                 <element signature="method#columnConstraintsCreation#0;class#MatrixWindowController#0" expanded="false" />
                 <element signature="method#rowConstrCreation#0;class#MatrixWindowController#0" expanded="false" />
@@ -177,16 +134,17 @@
                 <element signature="method#setTestData#0;class#MatrixWindowController#0" expanded="false" />
                 <element signature="method#getRandom#0;class#MatrixWindowController#0" expanded="false" />
                 <element signature="method#matrixColculation#0;class#MatrixWindowController#0" expanded="false" />
+                <element signature="method#matrixCreateAlertWindow#0;class#MatrixWindowController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test5.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/save/test5.txt">
+      <file leaf-file-name="ResultWindowController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/controllers/ResultWindowController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="3675">
+              <caret line="165" column="60" lean-forward="false" selection-start-line="165" selection-start-column="60" selection-end-line="165" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -205,6 +163,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>setResiz</find>
+      <find>размер результирующег</find>
+      <find>размер результирующего</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -226,25 +186,25 @@
         <option value="$PROJECT_DIR$/src/sample/input_Krit_Amount_Window.fxml" />
         <option value="$PROJECT_DIR$/src/sample/InputKritAmountController.java" />
         <option value="$PROJECT_DIR$/src/sample/HelloWindowController.java" />
-        <option value="$PROJECT_DIR$/src/sample/windows/input_Krit_Amount_Window.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Select_Krit_Window.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Matrix_Window.fxml" />
         <option value="$PROJECT_DIR$/src/sample/windows/Warning_Window.fxml" />
         <option value="$PROJECT_DIR$/src/sample/controllers/AddWindowController.java" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Input_Alternativ_Window.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Hello_Window.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Alternativ_Window.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Result_Window.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/save/test4.txt" />
         <option value="$PROJECT_DIR$/src/sample/save/test2.txt" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Alternativ_Window.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Hello_Window.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Input_Alternativ_Window.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/input_Krit_Amount_Window.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Result_Window.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/controllers/InputAlternativController.java" />
+        <option value="$PROJECT_DIR$/src/sample/controllers/InputKritAmountController.java" />
+        <option value="$PROJECT_DIR$/src/sample/controllers/SelectKritController.java" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Matrix_Window.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Select_Krit_Window.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/controllers/ResultWindowController.java" />
         <option value="$PROJECT_DIR$/src/sample/controllers/HelloWindowController.java" />
         <option value="$PROJECT_DIR$/src/sample/controllers/MatrixWindowController.java" />
-        <option value="$PROJECT_DIR$/src/sample/controllers/InputAlternativController.java" />
-        <option value="$PROJECT_DIR$/src/sample/controllers/SelectKritController.java" />
-        <option value="$PROJECT_DIR$/src/sample/controllers/InputKritAmountController.java" />
         <option value="$PROJECT_DIR$/src/sample/controllers/AlternativWindowController.java" />
-        <option value="$PROJECT_DIR$/src/sample/controllers/ResultWindowController.java" />
       </list>
     </option>
   </component>
@@ -273,10 +233,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -307,19 +266,13 @@
               <item name="SPPR_2.0" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="save" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SPPR_2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SPPR_2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
               <item name="windows" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,7 +287,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -499,36 +452,36 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18017058" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19616205" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995657" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -541,7 +494,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -550,182 +503,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/HelloWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#1741#1788#0" expanded="false" />
-            <element signature="method#createSaveFileWindow#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="method#createLoadFileWindow#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="method#loadProgram#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="e#4773#4846#0" expanded="false" />
-            <element signature="method#saveProgram#0;class#HelloWindowController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/InputKritAmountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1075">
-          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="method#createAlertWindow#0;class#InputKritAmountController#0" expanded="false" />
-            <element signature="method#warningCheck#0;class#InputKritAmountController#0" expanded="false" />
-            <element signature="method#createWarningWindow#0;class#InputKritAmountController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/SelectKritController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="56" column="37" lean-forward="false" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/MatrixWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-          <folding>
-            <element signature="method#createTextField#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#columnConstraintsCreation#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#rowConstrCreation#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#createMatrix#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#setLoadedData#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#setTestData#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#getRandom#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#matrixColculation#0;class#MatrixWindowController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Matrix_Window.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="261" lean-forward="false" selection-start-line="14" selection-start-column="261" selection-end-line="14" selection-end-column="261" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Hello_Window.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="50" column="41" lean-forward="false" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/HelloWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#1741#1788#0" expanded="false" />
-            <element signature="method#createSaveFileWindow#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="method#createLoadFileWindow#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="method#loadProgram#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="e#4773#4846#0" expanded="false" />
-            <element signature="method#saveProgram#0;class#HelloWindowController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/InputKritAmountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1075">
-          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="method#createAlertWindow#0;class#InputKritAmountController#0" expanded="false" />
-            <element signature="method#warningCheck#0;class#InputKritAmountController#0" expanded="false" />
-            <element signature="method#createWarningWindow#0;class#InputKritAmountController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/SelectKritController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="56" column="37" lean-forward="false" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/MatrixWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-          <folding>
-            <element signature="method#createTextField#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#columnConstraintsCreation#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#rowConstrCreation#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#createMatrix#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#setLoadedData#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#setTestData#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#getRandom#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#matrixColculation#0;class#MatrixWindowController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Matrix_Window.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="261" lean-forward="false" selection-start-line="14" selection-start-column="261" selection-end-line="14" selection-end-column="261" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Hello_Window.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="50" column="41" lean-forward="false" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/InputAlternativController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="56" column="63" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/windows/Input_Alternativ_Window.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -741,18 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1150">
           <caret line="57" column="72" lean-forward="true" selection-start-line="57" selection-start-column="72" selection-end-line="57" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="method#createAlertWindow#0;class#InputKritAmountController#0" expanded="false" />
-            <element signature="method#warningCheck#0;class#InputKritAmountController#0" expanded="false" />
-            <element signature="method#createWarningWindow#0;class#InputKritAmountController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -760,16 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1250">
           <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="method#createTextField#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#columnConstraintsCreation#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#rowConstrCreation#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#createMatrix#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#setLoadedData#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#setTestData#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#getRandom#0;class#MatrixWindowController#0" expanded="false" />
-            <element signature="method#matrixColculation#0;class#MatrixWindowController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -777,7 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1325">
           <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -785,14 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
           <caret line="48" column="39" lean-forward="true" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
-          <folding>
-            <element signature="e#1741#1788#0" expanded="false" />
-            <element signature="method#createSaveFileWindow#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="method#createLoadFileWindow#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="method#loadProgram#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="e#4773#4846#0" expanded="false" />
-            <element signature="method#saveProgram#0;class#HelloWindowController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -818,14 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#1741#1788#0" expanded="false" />
-            <element signature="method#createSaveFileWindow#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="method#createLoadFileWindow#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="method#loadProgram#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="e#4773#4846#0" expanded="false" />
-            <element signature="method#saveProgram#0;class#HelloWindowController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -882,72 +620,6 @@
     <entry file="file://$PROJECT_DIR$/src/sample/save/test4.txt" />
     <entry file="file://$PROJECT_DIR$/src/sample/save/test25.txt" />
     <entry file="file://$PROJECT_DIR$/src/sample/save/test6.txt" />
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Input_Alternativ_Window.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="76" column="58" lean-forward="false" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/input_Krit_Amount_Window.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="70" column="76" lean-forward="false" selection-start-line="70" selection-start-column="76" selection-end-line="70" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Result_Window.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Select_Krit_Window.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="254" lean-forward="false" selection-start-line="16" selection-start-column="254" selection-end-line="16" selection-end-column="254" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Matrix_Window.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="84" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Alternativ_Window.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="224" lean-forward="false" selection-start-line="15" selection-start-column="224" selection-end-line="15" selection-end-column="224" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/save/test2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -962,14 +634,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Hello_Window.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/sample/save/test5.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controllers/InputKritAmountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="813">
+          <caret line="179" column="5" lean-forward="false" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -981,24 +656,215 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/save/test5.txt">
+    <entry file="file://$PROJECT_DIR$/src/sample/controllers/SelectKritController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="443">
+          <caret line="208" column="5" lean-forward="true" selection-start-line="202" selection-start-column="4" selection-end-line="208" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/javafx/event/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="3096" column="0" lean-forward="false" selection-start-line="3096" selection-start-column="0" selection-end-line="3096" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/com/sun/javafx/event/EventUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/com/sun/javafx/event/EventDispatchChainImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/com/sun/javafx/event/BasicEventDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/com/sun/javafx/event/CompositeEventDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/com/sun/javafx/event/EventHandlerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/com/sun/javafx/event/CompositeEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/com/sun/javafx/scene/control/skin/BehaviorSkinBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/com/sun/javafx/scene/control/behavior/ButtonBehavior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="8411" column="0" lean-forward="false" selection-start-line="8411" selection-start-column="0" selection-end-line="8411" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/javafx/scene/control/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programms/Java/jdk1.8.0_211/javafx-src.zip!/javafx/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="2494" column="0" lean-forward="false" selection-start-line="2494" selection-start-column="0" selection-end-line="2494" selection-end-column="0" />
+          <folding>
+            <element signature="e#66572#66573#0" expanded="false" />
+            <element signature="e#66618#66619#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Hello_Window.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Input_Alternativ_Window.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-298">
+          <caret line="104" column="6" lean-forward="true" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/input_Krit_Amount_Window.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="108" column="115" lean-forward="false" selection-start-line="108" selection-start-column="115" selection-end-line="108" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Matrix_Window.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="58" column="597" lean-forward="false" selection-start-line="58" selection-start-column="597" selection-end-line="58" selection-end-column="597" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Result_Window.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="40" column="108" lean-forward="false" selection-start-line="40" selection-start-column="108" selection-end-line="40" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Select_Krit_Window.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="108" column="25" lean-forward="false" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Alternativ_Window.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="110" column="35" lean-forward="true" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controllers/InputAlternativController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3275">
+          <caret line="147" column="13" lean-forward="false" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controllers/ResultWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3675">
+          <caret line="165" column="60" lean-forward="false" selection-start-line="165" selection-start-column="60" selection-end-line="165" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controllers/HelloWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="67" column="79" lean-forward="true" selection-start-line="67" selection-start-column="79" selection-end-line="67" selection-end-column="79" />
+        <state relative-caret-position="4475">
+          <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
           <folding>
-            <element signature="e#1741#1788#0" expanded="false" />
-            <element signature="method#createSaveFileWindow#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="method#createLoadFileWindow#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="method#loadProgram#0;class#HelloWindowController#0" expanded="false" />
-            <element signature="e#4773#4846#0" expanded="false" />
             <element signature="method#saveProgram#0;class#HelloWindowController#0" expanded="false" />
           </folding>
         </state>
@@ -1006,9 +872,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controllers/MatrixWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="125" column="79" lean-forward="true" selection-start-line="125" selection-start-column="79" selection-end-line="125" selection-end-column="79" />
+        <state relative-caret-position="720">
+          <caret line="137" column="25" lean-forward="false" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
           <folding>
+            <element signature="e#4718#4908#0" expanded="false" />
+            <element signature="e#5081#5128#0" expanded="false" />
+            <element signature="e#5162#5327#0" expanded="false" />
+            <element signature="e#5366#5548#0" expanded="false" />
+            <element signature="method#isFlag#0;class#MatrixWindowController#0" expanded="false" />
             <element signature="method#createTextField#0;class#MatrixWindowController#0" expanded="false" />
             <element signature="method#columnConstraintsCreation#0;class#MatrixWindowController#0" expanded="false" />
             <element signature="method#rowConstrCreation#0;class#MatrixWindowController#0" expanded="false" />
@@ -1017,74 +888,30 @@
             <element signature="method#setTestData#0;class#MatrixWindowController#0" expanded="false" />
             <element signature="method#getRandom#0;class#MatrixWindowController#0" expanded="false" />
             <element signature="method#matrixColculation#0;class#MatrixWindowController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/InputAlternativController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="130" column="75" lean-forward="true" selection-start-line="130" selection-start-column="75" selection-end-line="130" selection-end-column="75" />
-          <folding>
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/SelectKritController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="118" column="10" lean-forward="false" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/InputKritAmountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1018">
-          <caret line="92" column="10" lean-forward="false" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="method#createAlertWindow#0;class#InputKritAmountController#0" expanded="false" />
-            <element signature="method#warningCheck#0;class#InputKritAmountController#0" expanded="false" />
-            <element signature="method#createWarningWindow#0;class#InputKritAmountController#0" expanded="false" />
+            <element signature="method#matrixCreateAlertWindow#0;class#MatrixWindowController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controllers/AlternativWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="114" column="51" lean-forward="false" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
+        <state relative-caret-position="265">
+          <caret line="94" column="28" lean-forward="false" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
           <folding>
-            <element signature="e#5223#5413#0" expanded="false" />
-            <element signature="e#5733#6110#0" expanded="false" />
+            <element signature="e#3579#3769#0" expanded="false" />
+            <element signature="e#3928#3975#0" expanded="false" />
+            <element signature="e#4089#4466#0" expanded="false" />
+            <element signature="e#4557#4746#0" expanded="false" />
+            <element signature="e#4785#4967#0" expanded="false" />
             <element signature="method#clearMatrix#0;class#AlternativWindowController#0" expanded="false" />
+            <element signature="method#isFlag#0;class#AlternativWindowController#0" expanded="false" />
             <element signature="method#createTextField#0;class#AlternativWindowController#0" expanded="false" />
             <element signature="method#columnConstraintsCreation#0;class#AlternativWindowController#0" expanded="false" />
             <element signature="method#rowConstrCreation#0;class#AlternativWindowController#0" expanded="false" />
             <element signature="method#createMatrix#0;class#AlternativWindowController#0" expanded="false" />
-            <element signature="method#setLoadedData#0;class#AlternativWindowController#0" expanded="false" />
             <element signature="method#setTestData#0;class#AlternativWindowController#0" expanded="false" />
             <element signature="method#getRandom#0;class#AlternativWindowController#0" expanded="false" />
             <element signature="method#matrixColculation#0;class#AlternativWindowController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/ResultWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="147" column="89" lean-forward="false" selection-start-line="147" selection-start-column="89" selection-end-line="147" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

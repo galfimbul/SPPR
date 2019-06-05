@@ -48,12 +48,6 @@ public class SelectKritController {
     private static ObservableList<String> selectedKritMass =FXCollections.observableArrayList();
 
     @FXML
-    private MenuBar select_Krit_Window_MenuBar;
-
-    @FXML
-    private Label select_Krit_Window_Label;
-
-    @FXML
     private Label select_Krit_Window_InsertLabel;
 
     @FXML
@@ -67,8 +61,6 @@ public class SelectKritController {
 
     @FXML
     private Label select_Krit_Window_HelpLabel;
-
-
 
     @FXML
     private  ListView<String> select_Krit_Window_SelectedKritList; // список выбранных критериев
@@ -111,10 +103,7 @@ public class SelectKritController {
         select_Krit_Window_ComboBox.getItems().removeAll();
 
         select_Krit_Window_ComboBox.getItems().addAll(options);
-
         // получаем модель выбора элементов
-
-
         System.out.println(getClass().getSimpleName());
         //HelloWindowController wc = new HelloWindowController();
 
@@ -195,7 +184,6 @@ public class SelectKritController {
             HelloWindowController.createInformationWindow("По всем возникшим вопросам обращаться: aevshvetsov@gmail.com","Связь с автором");
         });
     }
-
     private void createInsertWindow(String message,ComboBox<String> comboBox) {
         TextInputDialog dialog = new TextInputDialog("");
         dialog.setTitle("Добавить критерий");
@@ -219,6 +207,4 @@ public class SelectKritController {
         alert.setContentText(String.format(message));
         alert.showAndWait();
     }
-
 }
-

@@ -151,14 +151,15 @@ public class InputAlternativController {
         close_Menu.setOnAction(event -> System.exit(0));
         new_Calculation_Menu.setOnAction(event -> ResultWindowController.createNewSession());
         about_Menu.setOnAction(event -> {
-            HelloWindowController.createInformationWindow("Система поддержки принятия решений создана в рамках МКР в 2019 году","О программе");
+            HelloWindowController.createInformationWindow("Система поддержки принятия решений создана в рамках МКР в 2019 году",
+                    "О программе");
         });
         connection_Menu.setOnAction(event -> {
-            HelloWindowController.createInformationWindow("По всем возникшим вопросам обращаться: aevshvetsov@gmail.com","Связь с автором");
+            HelloWindowController.createInformationWindow("По всем возникшим вопросам обращаться: aevshvetsov@gmail.com",
+                    "Связь с автором");
         });
 
     }
-
     private void addAlternativ() {
         selectedAlternativSize = input_Alternativ_AlternativList.getItems().size();
         String s = input_Alternativ_InsertField.getText();
