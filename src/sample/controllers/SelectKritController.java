@@ -176,7 +176,10 @@ public class SelectKritController {
 
         });
         close_Menu.setOnAction(event -> System.exit(0));
-        new_Calculation_Menu.setOnAction(event -> ResultWindowController.createNewSession());
+        new_Calculation_Menu.setOnAction(event -> {
+            ResultWindowController.createNewSession();
+            HelloWindowController.set_And_Show_Window("/sample/windows/input_Krit_Amount_Window.fxml");
+            });
         about_Menu.setOnAction(event -> {
             HelloWindowController.createInformationWindow("Система поддержки принятия решений создана в рамках МКР в 2019 году","О программе");
         });

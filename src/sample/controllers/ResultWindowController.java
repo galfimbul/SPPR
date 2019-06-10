@@ -126,7 +126,6 @@ public class ResultWindowController {
 
         //Кнопка новый расчет
         result_Window_newBtn.setOnAction(event -> {
-
             createNewSession();
             HelloWindowController.set_And_Show_Window("/sample/windows/Hello_Window.fxml");
         });
@@ -154,7 +153,7 @@ public class ResultWindowController {
         close_Menu.setOnAction(event -> System.exit(0));
         result_Window_CLoseBtn.setOnAction(event -> System.exit(0));
         new_Calculation_Menu.setOnAction(event -> {
-            wc.set_And_Show_Window("/sample/windows/input_Krit_Amount_Window.fxml");
+            HelloWindowController.set_And_Show_Window("/sample/windows/input_Krit_Amount_Window.fxml");
             createNewSession();
         });
     }
@@ -163,6 +162,9 @@ public class ResultWindowController {
         InputKritAmountController.setAlternative_Amount(0);
         SelectKritController.getSelectedKritMass().clear();
         InputAlternativController.getInputAlternativList().clear();
-        MatrixWindowController.getSaveMatrixValue().clear();
+        if(MatrixWindowController.getSaveMatrixValue()!=null){
+         MatrixWindowController.setSaveMatrixValue(null);
+        }
+
     }
 }

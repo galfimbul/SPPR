@@ -72,19 +72,14 @@ public class HelloWindowController {
         });
         new_Calculation_Menu.setOnAction(event -> {
             ResultWindowController.createNewSession();
+            set_And_Show_Window("/sample/windows/input_Krit_Amount_Window.fxml");
         });
         close_Menu.setOnAction(event -> System.exit(0));
         save_Menu.setOnAction(event -> {
             saveProgram();
         });
         load_Menu.setOnAction(event -> {loadProgram();
-            try {
-                Parent parent = FXMLLoader.load(getClass().getResource("/sample/windows/input_Krit_Amount_Window.fxml"));
-                Main.stage.setScene(new Scene(parent));
-                Main.stage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+
         });
 
         about_Menu.setOnAction(event -> {
@@ -171,15 +166,23 @@ public class HelloWindowController {
                     InputAlternativController.getInputAlternativList().add(br.readLine());
                 }
                 size = Integer.parseInt(br.readLine());
+                MatrixWindowController.setSaveMatrixValue(new String[size]);
                 for (int i = 0; i < size; i++) {
-                    MatrixWindowController.getSaveMatrixValue().add(br.readLine());
-                    System.out.print(MatrixWindowController.getSaveMatrixValue().get(i));
+                    MatrixWindowController.getSaveMatrixValue()[i] = br.readLine();
+                    System.out.print(MatrixWindowController.getSaveMatrixValue()[i]);
                 }
                 System.out.println();
                 size = Integer.parseInt(br.readLine());
                 br.close();
                 System.out.println(InputKritAmountController.getKrit_Amount());
                 System.out.println(InputKritAmountController.getAlternative_Amount());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            try {
+                Parent parent = FXMLLoader.load(HelloWindowController.class.getResource("/sample/windows/input_Krit_Amount_Window.fxml"));
+                Main.stage.setScene(new Scene(parent));
+                Main.stage.show();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -218,8 +221,8 @@ public class HelloWindowController {
                     fw.write(String.format("%s\n", s));
                 }
                 // для записи массива с данными всех матриц
-                fw.write(String.format("%d\n", MatrixWindowController.getSaveMatrixValue().size()));
-                System.out.println("Размер массива с матрицами: " + MatrixWindowController.getSaveMatrixValue().size());
+                fw.write(String.format("%d\n", MatrixWindowController.getSaveMatrixValue().length));
+                System.out.println("Размер массива с матрицами: " + MatrixWindowController.getSaveMatrixValue().length);
                 for (String s : MatrixWindowController.getSaveMatrixValue()) {
                     fw.write(String.format("%s\n", s));
                 }

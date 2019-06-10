@@ -35,9 +35,11 @@ import javafx.util.Callback;
 import sample.Main;
 
 public class MatrixWindowController {
-    static int n;
-    static int m;
-    private int resultMassivSize = InputKritAmountController.getAlternative_Amount() + 1;
+
+    static int m = 0;
+    static int n = 0; // строки
+
+    private static int resultMassivSize = 0;
     private static double[][] resultMassiv;
     private double[] nvpMatrix;
     private TextField tf;
@@ -47,9 +49,13 @@ public class MatrixWindowController {
     ObservableList<String> krit_Mass = SelectKritController.getSelectedKritMass();
 
 
-    private static ObservableList<String> saveMatrixValue = FXCollections.observableArrayList();
+    private static String[] saveMatrixValue;
 
-    public static ObservableList<String> getSaveMatrixValue() {
+    public static void setSaveMatrixValue(String[] saveMatrixValue) {
+        MatrixWindowController.saveMatrixValue = saveMatrixValue;
+    }
+
+    public static String[] getSaveMatrixValue() {
         return saveMatrixValue;
     }
 
@@ -60,6 +66,7 @@ public class MatrixWindowController {
     public static void setResultMassiv(double[][] resultMassiv) {
         MatrixWindowController.resultMassiv = resultMassiv;
     }
+
 
     @FXML
     private Label matrix_Window_Label;
@@ -92,6 +99,18 @@ public class MatrixWindowController {
     private Button clear_Matrix_Btn;
 
     @FXML
+    private MenuItem new_Calculation_Menu;
+
+    @FXML
+    private MenuItem load_Menu;
+
+    @FXML
+    private MenuItem save_Menu;
+
+    @FXML
+    private MenuItem close_Menu;
+
+    @FXML
     private MenuItem about_Menu;
 
     @FXML
@@ -100,21 +119,26 @@ public class MatrixWindowController {
     @FXML
     void initialize() {
         // счетчик элементов массива сохранения результатов
-        m = InputKritAmountController.getKrit_Amount(); // столбцы;
-        n = m + 1; // строки;
+        m = InputKritAmountController.getKrit_Amount(); // столбцы
+        n = m + 1; // строки
+        resultMassivSize = InputKritAmountController.getAlternative_Amount() + 1;
+        if(saveMatrixValue==null) {
+            saveMatrixValue = new String[m * m + (m * (resultMassivSize - 1) * (resultMassivSize - 1))];
+        }
+
         Main.stage.setResizable(true);
         resultMassiv = new double[resultMassivSize][m];
         //matrixSize = SelectKritController.getSelectedKritMass().size();
         System.out.println(String.format("Размер результирующего массива : %dx%d", resultMassivSize, m));
         createMatrix(matrix_Window_MatrixPane, n);
-        if (!saveMatrixValue.isEmpty()) {
+        if (saveMatrixValue.length!=0) {
             setLoadedData(m, m * m);
         }
         matrix_Window_NextBut.setOnAction(event -> {
             int z = 0; // счетчик элементов массива сохранения результатов матрицы
             if (isFlag()) {
                 double oSValue = matrixColculation(matrix_Window_MatrixPane, m);
-                if ((oSValue * 100) <= 100) {
+                if ((oSValue * 100) <= 150) {
                     for (int i = 0; i < nvpMatrix.length; i++) {
                         resultMassiv[0][i] = nvpMatrix[i];
                         System.out.printf("%2.3f ", resultMassiv[0][i]);
@@ -125,12 +149,8 @@ public class MatrixWindowController {
 
                     for (int i = 1 + m * 2; i < matrix_Window_MatrixPane.getChildren().size(); i++) {
                         textField = (TextField) matrix_Window_MatrixPane.getChildren().get(i);
-                        if(saveMatrixValue.size()<m*m)
-                        saveMatrixValue.add(textField.getText());
-                        if(saveMatrixValue.size()>m*m){
-                            saveMatrixValue.set(z,textField.getText());
-                            z++;
-                        }
+                        saveMatrixValue[z] = textField.getText();
+                        z++;
                     }
                 } else
                     matrixCreateAlertWindow("Значение ОС более 15%%. Заполните матрицу заново.");
@@ -151,12 +171,31 @@ public class MatrixWindowController {
         clear_Matrix_Btn.setOnAction(event -> {
             clearMatrix();
         });
+        save_Menu.setOnAction(event -> {
+            HelloWindowController.saveProgram();
+        });
+
+        load_Menu.setOnAction(event -> {HelloWindowController.loadProgram();
+            try {
+                Parent parent = FXMLLoader.load(getClass().getResource("/sample/windows/input_Krit_Amount_Window.fxml"));
+                Main.stage.setScene(new Scene(parent));
+                Main.stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        });
         about_Menu.setOnAction(event -> {
-            HelloWindowController.createInformationWindow("Система поддержки принятия решений создана в рамках МКР в 2019 году", "О программе");
+            HelloWindowController.createInformationWindow("Система поддержки принятия решений создана в рамках МКР в 2019 году","О программе");
         });
         connection_Menu.setOnAction(event -> {
             HelloWindowController.createInformationWindow("По всем возникшим вопросам обращаться: aevshvetsov@gmail.com",
                     "Связь с автором");
+        });
+        close_Menu.setOnAction(event -> System.exit(0));
+        new_Calculation_Menu.setOnAction(event -> {
+            ResultWindowController.createNewSession();
+            HelloWindowController.set_And_Show_Window("/sample/windows/input_Krit_Amount_Window.fxml");
         });
     }
 
@@ -240,7 +279,7 @@ public class MatrixWindowController {
         int k = 1 + n * 2;
         for (int j = 0; j < count; j++) {
             textField = (TextField) matrix_Window_MatrixPane.getChildren().get(k);
-            textField.setText(saveMatrixValue.get(j));
+            textField.setText(saveMatrixValue[j]);
             k++;
         }
     }

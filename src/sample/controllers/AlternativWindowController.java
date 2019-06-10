@@ -64,6 +64,9 @@ public class AlternativWindowController {
     private Button alternativ_Clear_Matrix_Btn;
 
     @FXML
+    private MenuItem new_Calculation_Menu;
+
+    @FXML
     private MenuItem load_Menu;
 
     @FXML
@@ -80,12 +83,15 @@ public class AlternativWindowController {
 
     @FXML
     void initialize() {
-        //int z = (iteration-1)*m*m;
+        n = InputKritAmountController.getAlternative_Amount() + 1; // количество строк матрицы альтернатив
+        m = n - 1; // столбцы
+
+        z = matrixSize*matrixSize;
         matrix_Window_Label.setText(String.format("Сравнение альтернатив по критерию: %s",
                 SelectKritController.getSelectedKritMass().get(iteration-1)));
         //System.out.println(matrixSize);
         createMatrix(matrix_Window_MatrixPane, n);
-        if(MatrixWindowController.getSaveMatrixValue().size()> initCountValue){
+        if(MatrixWindowController.getSaveMatrixValue().length> initCountValue){
             setLoadedData(m,initCountValue);
         }
 
@@ -93,7 +99,7 @@ public class AlternativWindowController {
 
             matrixHandler();
             z = (iteration-1)*m*m;
-            if (MatrixWindowController.getSaveMatrixValue().size() == matrixSize*m*m+initCountValue&& iteration<=matrixSize) {
+            if (MatrixWindowController.getSaveMatrixValue().length == matrixSize*m*m+initCountValue&& iteration<=matrixSize) {
                 clearMatrix();
                 setLoadedData(m,  initCountValue+z);
             }
@@ -123,7 +129,10 @@ public class AlternativWindowController {
             clearMatrix();
         });
 
-        save_Menu.setOnAction(event -> {HelloWindowController.saveProgram();});
+        save_Menu.setOnAction(event -> {
+            HelloWindowController.saveProgram();
+        });
+
         load_Menu.setOnAction(event -> {HelloWindowController.loadProgram();
             try {
                 Parent parent = FXMLLoader.load(getClass().getResource("/sample/windows/input_Krit_Amount_Window.fxml"));
@@ -134,14 +143,17 @@ public class AlternativWindowController {
             }
 
         });
-        close_Menu.setOnAction(event -> System.exit(0));
         about_Menu.setOnAction(event -> {
-            HelloWindowController.createInformationWindow("Система поддержки принятия решений создана в рамках МКР в " +
-                    "2019 году","О программе");
+            HelloWindowController.createInformationWindow("Система поддержки принятия решений создана в рамках МКР в 2019 году","О программе");
         });
         connection_Menu.setOnAction(event -> {
             HelloWindowController.createInformationWindow("По всем возникшим вопросам обращаться: aevshvetsov@gmail.com",
                     "Связь с автором");
+        });
+        close_Menu.setOnAction(event -> System.exit(0));
+        new_Calculation_Menu.setOnAction(event -> {
+            HelloWindowController.set_And_Show_Window("/sample/windows/input_Krit_Amount_Window.fxml");
+            ResultWindowController.createNewSession();
         });
     }
 
@@ -151,7 +163,7 @@ public class AlternativWindowController {
         if (isFlag()) {
 
             osValue = matrixColculation(matrix_Window_MatrixPane, m);
-            if (osValue * 100 <= 100) {
+            if (osValue * 100 <= 150) {
                 for (int i = 0; i < nvpAlternativ.length; i++) {
                     MatrixWindowController.getResultMassiv()[i + 1][iteration - 1] = nvpAlternativ[i];
                     System.out.printf("%2.3f ", MatrixWindowController.getResultMassiv()[i + 1][iteration - 1]);
@@ -160,17 +172,15 @@ public class AlternativWindowController {
                 for (int i = 1 + m * 2; i < matrix_Window_MatrixPane.getChildren().size(); i++) {
                     textField = (TextField) matrix_Window_MatrixPane.getChildren().get(i);
                     //System.out.println("Значение текстового поля: "+ textField.getText());
-                    if(MatrixWindowController.getSaveMatrixValue().size() == matrixSize*m*m + initCountValue){
-                        MatrixWindowController.getSaveMatrixValue().set(z,textField.getText());
+                        MatrixWindowController.getSaveMatrixValue()[z] = textField.getText();
                         z++;
-                    } else{MatrixWindowController.getSaveMatrixValue().add(textField.getText());}
                     System.out.println("Добавляемое значение в массив: " + textField.getText());
                 }
                 iteration++;
             } else
                 matrixCreateAlertWindow("Значение ОС более 15%%. Заполните матрицу заново.");
         }
-        if (MatrixWindowController.getSaveMatrixValue().size() < m * m * iteration + matrixSize * matrixSize)
+        if (MatrixWindowController.getSaveMatrixValue().length < m * m * iteration + matrixSize * matrixSize)
             clearMatrix();
 
     }
@@ -259,7 +269,7 @@ public class AlternativWindowController {
         int k = 1 + n*2;
         for (int j = 0; j < n*n; j++) {
             textField = (TextField) matrix_Window_MatrixPane.getChildren().get(k);
-            textField.setText(MatrixWindowController.getSaveMatrixValue().get(j+count));
+            textField.setText(MatrixWindowController.getSaveMatrixValue()[j+count]);
             k++;
         }
     }

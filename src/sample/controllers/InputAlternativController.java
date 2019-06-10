@@ -116,7 +116,6 @@ public class InputAlternativController {
         });
 
         System.out.println(getClass().getSimpleName());
-        HelloWindowController wc = new HelloWindowController();
 
         //Кнопка далее
         input_Alternativ_NextBut.setOnAction(event -> {
@@ -128,16 +127,19 @@ public class InputAlternativController {
                 int count = alternativ_Amount - inputAlternativList.size();
                 SelectKritController.createAlertWindow(String.format("Введите дополнительно %s альтернатив/(ы)", count));
             } else {
-                wc.set_And_Show_Window("/sample/windows/Matrix_Window.fxml");
+                HelloWindowController.set_And_Show_Window("/sample/windows/Matrix_Window.fxml");
                 Main.stage.setResizable(true);
             }
         });
         input_Alternativ_PrevBut.setOnAction(event -> {
             //input_Alternativ_PrevBut.getScene().getWindow().hide();
-            wc.set_And_Show_Window("/sample/windows/Select_Krit_Window.fxml");
+            HelloWindowController.set_And_Show_Window("/sample/windows/Select_Krit_Window.fxml");
         });
 
-        save_Menu.setOnAction(event -> {HelloWindowController.saveProgram();});
+        save_Menu.setOnAction(event -> {
+            HelloWindowController.saveProgram();
+        });
+
         load_Menu.setOnAction(event -> {HelloWindowController.loadProgram();
             try {
                 Parent parent = FXMLLoader.load(getClass().getResource("/sample/windows/input_Krit_Amount_Window.fxml"));
@@ -148,15 +150,17 @@ public class InputAlternativController {
             }
 
         });
-        close_Menu.setOnAction(event -> System.exit(0));
-        new_Calculation_Menu.setOnAction(event -> ResultWindowController.createNewSession());
         about_Menu.setOnAction(event -> {
-            HelloWindowController.createInformationWindow("Система поддержки принятия решений создана в рамках МКР в 2019 году",
-                    "О программе");
+            HelloWindowController.createInformationWindow("Система поддержки принятия решений создана в рамках МКР в 2019 году","О программе");
         });
         connection_Menu.setOnAction(event -> {
             HelloWindowController.createInformationWindow("По всем возникшим вопросам обращаться: aevshvetsov@gmail.com",
                     "Связь с автором");
+        });
+        close_Menu.setOnAction(event -> System.exit(0));
+        new_Calculation_Menu.setOnAction(event -> {
+            HelloWindowController.set_And_Show_Window("/sample/windows/input_Krit_Amount_Window.fxml");
+            ResultWindowController.createNewSession();
         });
 
     }
@@ -171,6 +175,10 @@ public class InputAlternativController {
         if (selectedAlternativSize == alternativ_Amount) {
             SelectKritController.createAlertWindow("Введено достаточное количество альтернатив");
             input_Alternativ_InsertField.setText("");
+        }
+        if (input_Alternativ_AlternativList.getItems().contains("")){
+            SelectKritController.createAlertWindow("Была введена пустая строка. Добавьте альтернативу заново.");
+            input_Alternativ_AlternativList.getItems().remove("");
         }
     }
 }

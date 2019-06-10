@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -18,26 +19,41 @@
          <children>
             <AnchorPane prefHeight="86.0" prefWidth="700.0" HBox.hgrow="ALWAYS">
                <children>
-                  <Label fx:id="input_Krit_Amount_Label" alignment="CENTER" layoutX="247.0" layoutY="42.0" text="Система поддержки принятия решений при проектировании ЛВC" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="40.0">
-                     <font>
-                        <Font name="Times New Roman" size="23.0" />
-                     </font>
-                  </Label>
-                  <MenuBar fx:id="input_Krit_Amount_MenuBarl" layoutX="91.0" layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <MenuBar fx:id="input_Krit_Amount_MenuBarl" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <menus>
                         <Menu mnemonicParsing="false" text="Файл">
                            <items>
-                              <MenuItem mnemonicParsing="false" text="Close" />
+                              <MenuItem fx:id="new_Calculation_Menu" mnemonicParsing="false" text="Новый расчет">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                              <MenuItem fx:id="load_Menu" mnemonicParsing="false" text="Загрузить" />
+                              <MenuItem fx:id="save_Menu" mnemonicParsing="false" text="Сохранить">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                              <MenuItem fx:id="close_Menu" mnemonicParsing="false" text="Закрыть">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
                            </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="Помощь">
                            <items>
                               <MenuItem fx:id="about_Menu" mnemonicParsing="false" text="О программе" />
-                              <MenuItem fx:id="connection_Menu" mnemonicParsing="false" text="Связаться с автором" />
+                              <MenuItem fx:id="connection_Menu" mnemonicParsing="false" text="Связь с автором" />
                            </items>
                         </Menu>
                      </menus>
                   </MenuBar>
+                  <Label fx:id="input_Krit_Amount_Label" alignment="CENTER" layoutX="247.0" layoutY="42.0" text="Система поддержки принятия решений при проектировании ЛВC" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="40.0">
+                     <font>
+                        <Font name="Times New Roman" size="23.0" />
+                     </font>
+                  </Label>
                </children>
             </AnchorPane>
          </children>
